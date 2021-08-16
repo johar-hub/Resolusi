@@ -1,0 +1,10 @@
+Resolusi
+- Mengerti materi GIThub & GitLab
+- Mengerti materi PHP
+- Framework Codeignater
+- Javascript DOM
+- Bootstrap
+- CSS (SASS)
+- Modern Javascript
+- API
+- Reacst.Js
