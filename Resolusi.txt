@@ -1,11 +1,13 @@
 Resolusi
 - Mengerti materi GIThub & GitLab
 - Mengerti materi PHP
-- Framework Codeignater
+- Framework PHP
+  ^ codeignater
+  ^ Laravel
 - Javascript DOM
 - Bootstrap
 - CSS (SASS)
 - Modern Javascript
 - API
 - Reacst.Js
-- Database Postgreesql, MongoDB
+- Database Postgreesql, MariaDB
