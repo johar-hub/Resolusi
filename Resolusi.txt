@@ -8,3 +8,4 @@ Resolusi
 - Modern Javascript
 - API
 - Reacst.Js
+- Database Mysql, Postgreesql
