@@ -1,7 +1,9 @@
 <?php
+
+// KONEKSI DATABASE
 // Buat halaman untuk menampung koneksi database dan function
 //cara menyambungkan ke halaman lain
-require "function_database.php";
+require "functions.php";
 
 // buat variable untuk menampung data function dengan perintah "SELECT * FROM nama_table"
 $total_brg = query("SELECT * FROM tb_barang");//PARAMETER UNTUK USER MELAKUKAN PENGAMBILAN BAJU DI LEMARI
@@ -11,6 +13,7 @@ $total_brg = query("SELECT * FROM tb_barang");//PARAMETER UNTUK USER MELAKUKAN P
 /* if (!$result) {
     echo mysqli_error($db);
 } */
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +24,8 @@ $total_brg = query("SELECT * FROM tb_barang");//PARAMETER UNTUK USER MELAKUKAN P
     <title>Latihan Koneksi Database MYSQL dengan php</title>
 </head>
 <body>
+    <a href="CREAT.php"><button>Tambah Data !</button></a>
+    
     <table border="1" cellpadding="5" >
         <thead>
             <th>No</th>
@@ -39,7 +44,7 @@ $total_brg = query("SELECT * FROM tb_barang");//PARAMETER UNTUK USER MELAKUKAN P
             <tr>
                 <td><?= $no;?></td>
                 <td><?= $brg["id"];?></td>
-                <td><a href="">Ubah</a>|<a href="">Hapus</a></td>
+                <td><a href="">Ubah</a>|<a href="DELETE.php?id=<?= $brg["id"];?>" onclick="return confirm('Anda Yakin Data dengan Id = <?= $brg['id']?> ingin dihapus ?');">Hapus</a></td>
                 <td><img src="<?= $brg["gambar"];?>" alt="" width=100></td>
                 <td><?= $brg["nama"];?></td>
                 <td><?= $brg["brand"];?></td>
