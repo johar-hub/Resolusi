@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css tolong modifikasi elemen body */
+        body{
+            font-family: arial, sans-serif;
+            font-size: 10px;
+        }
+        /* css tolong modifikasi yang memiliki class header */
+        .header{
+            background-color: rgb(0, 255, 255);
+            text-align: center;
+            padding: 10px;
+            height: 50px;
+            
+            
+        }
+        /* css tolong ubah elemn h1 yang memiliki class header */
+        .header h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+            font-size: normal;
+        }
+        .navbar{
+            background-color: green;
+            text-align: center;
+        }
+        /* css tolong modifikasi elemen li dari elemen ul yang memiliki class navbar */
+        .navbar ul li{
+            display: inline-block;
+            font-size: 16px;
+            background-color: khaki;
+            width: 30px;
+        }
+        /* Pseudo */
+
+        /* css tolong lakukan modifikasi ketika cursor mouse ke value elemen li dari elemen ul yang memiliki
+        class navbar */
+        .navbar ul li:hover{
+            background-color: blue;
+
+        }
+        /* css tolong modifikasi li dari ul yang terdapat elemen link(a href) dan clas navbar   */
+        .navbar:link ul li{
+            color: brown;
+
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        .main {
+            background-color: green;
+            width: 100%;
+        }
+        .main h2{
+            color: white;
+            text-align: center;
+            background-color: black;
+        }
+        .main img{
+            width: 500px;
+            display: inline;
+        }
+        .main p{
+            color: white;
+            font-size: 15px;
+        }
+        .footer{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .footer ol li{
+            font-size: 14px;
+            display: inline;
+        }
+        .footer a{
+            text-decoration: none;
+            color: black;
+            background-color: white;
+        }
+        .footer ol li:hover {
+            font-size: 20px;
+        }
+        /* css tolong modifikasi elemen a dari li dan ol yang yang memiliki class footer ketika user
+        mengklik value nya  */
+        .footer ol li a:active{
+            background-color: black;
+        }
+        .footer ol li a:active{
+            color: red;
+        }
+        /* css tolong lakukan modifikasi elemen a dari elemen li dan ol yang memiliki class footer
+        ketika user pernah mengunjungi link yang dituju */
+        .footer ol li a:visited{
+            color: blue;
+            background-color: brown;
+        }
+        /* css tologn ubah elemen a anak terakhir dari li dan dari ol yang memiliki class footer */
+        .footer ol li:last-child a{
+            color: aqua;
+        }
+        /* css tolong modifkasi anak ke 3 yang dikurangi 1 yang berada di elemen a dari elemen li dan ol
+         yang memiliki class footer  */
+        .footer ol li:nth-child(3n-1) a{
+            color: blueviolet;
+        }
+        /* dimensi dan overflof */
+        .of{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Johar Saputra Irsandi</h1>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="latihan materi Css.html">1</a></li>
+            <li><a href="Latihan Materi HTML.html">2</a></li>
+            <li><a href="3">3</a></li>
+            <li><a href="4">4</a></li>
+            <li><a href="5">5</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <h2>Latihan Layout</h2>
+        <img src="/vendor/img/backdrop.jpeg" alt="logojohar">
+        <img src="/vendor/img/backdrop.jpeg" alt="logojohar2">
+        <p>Perkenalkan nama saya johar saputra irsandi saya adalah fresh graduate lulusan universitas
+            nasional jurusan sistem informasi tahu  ajaran 2017-2021, saya sedang latihan programing
+            web development bahasa css dan php guna untuk mempersiapkan diri untuk berkarier didunia 
+            kerja programing secara profesional
+        </p>
+        <div class="of"><p>
+            Perkenalkan nama saya johar saputra irsandi saya adalah fresh graduate lulusan universitas
+            nasional jurusan sistem informasi tahu  ajaran 2017-2021, saya sedang latihan programing
+            web development bahasa css dan php guna untuk mempersiapkan diri untuk berkarier didunia 
+            kerja programing secara profesionalPerkenalkan nama saya johar saputra irsandi saya adalah fresh graduate lulusan universitas
+            nasional jurusan sistem informasi tahu  ajaran 2017-2021, saya sedang latihan programing
+            web development bahasa css dan php guna untuk mempersiapkan diri untuk berkarier didunia 
+            kerja programing secara profesional
+            Perkenalkan nama saya johar saputra irsandi saya adalah fresh graduate lulusan universitas
+            nasional jurusan sistem informasi tahu  ajaran 2017-2021, saya sedang latihan programing
+            web development bahasa css dan php guna untuk mempersiapkan diri untuk berkarier didunia 
+            kerja programing secara profesionalPerkenalkan nama saya johar saputra irsandi saya adalah fresh graduate lulusan universitas
+            nasional jurusan sistem informasi tahu  ajaran 2017-2021, saya sedang latihan programing
+            web development bahasa css dan php guna untuk mempersiapkan diri untuk berkarier didunia 
+            kerja programing secara profesional
+            Perkenalkan nama saya johar saputra irsandi saya adalah fresh graduate lulusan universitas
+            nasional jurusan sistem informasi tahu  ajaran 2017-2021, saya sedang latihan programing
+            web development bahasa css dan php guna untuk mempersiapkan diri untuk berkarier didunia 
+            kerja programing secara profesionalPerkenalkan nama saya johar saputra irsandi saya adalah fresh graduate lulusan universitas
+            nasional jurusan sistem informasi tahu  ajaran 2017-2021, saya sedang latihan programing
+            web development bahasa css dan php guna untuk mempersiapkan diri untuk berkarier didunia 
+            kerja programing secara profesional
+        </p></div>
+        <div class="margin">
+            <div class="satu">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod at, ut saepe qui velit suscipit ad illo? Totam ut quidem voluptatibus aperiam recusandae dolor iure, blanditiis, inventore quaerat architecto culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corporis doloremque ipsum provident porro saepe dolore, aperiam aspernatur similique facere nam iste suscipit. Atque, quod possimus nisi culpa placeat laborum!</div>
+            <div class="dua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio et dolore dolorem voluptas distinctio sequi animi veritatis velit dolores! Eius sed ipsa voluptates tempora, dolorem pariatur reprehenderit maiores earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero consectetur molestiae molestias dicta quibusdam eaque repudiandae, amet incidunt est ipsam, harum architecto odit quo! Eveniet dolore quisquam quis esse dolorem.</div>
+            <div class="tiga">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque exercitationem quas velit eveniet molestias commodi reprehenderit assumenda culpa inventore, adipisci quasi doloremque minus a autem quidem deleniti hic voluptatibus nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse cupiditate soluta unde neque quae vel! Non, at. Possimus, tempora pariatur odio voluptatum natus assumenda quos officia id eius iure!</div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <ol>
+            <li><a href="latihan materi Css.html">link</a></li>
+            <li><a href="3">hover</a></li>
+            <li><a href="4">actived</a></li>
+            <li><a href="5">visited</a></li>
+            <li><a href="6">1</a></li>
+            <li><a href="7">2</a></li>
+        </ol>
+        <p>Copyright 2020 jojo</p>
+    </div>
+    
+</body>
+</html>
