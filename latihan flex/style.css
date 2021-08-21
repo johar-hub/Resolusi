@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-satu {
+    display: flex;
+    margin: 0 5px;
+    max-width: 100vw;
+    margin: 0 2%;
+    border: 1px solid black;
+
+}
+
+.sidebar-kanan {
+    order: 1;
+    flex: 1;
+}
+
+.container-utama {
+    order: 2;
+    flex: 2;
+    margin: 0 50px;
+
+}
+
+.sidebar-kiri {
+    order: 3;
+    border: 2px solid black;
+    flex: 1;
+
+}
+
+.sidebar-kiri img {
+    width: 30%;
+    float: left;
+    margin: 0 5px;
+}
+
+.container-dua {
+
+    margin: 2% auto;
+    max-width: 80vw;
+
+}
+
+.layanan {
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.layanan.satu {
+    background-color: rgb(255, 153, 0);
+
+}
+
+.layanan.dua {
+    background-color: aqua;
+
+}
+
+.layanan.tiga {
+    background-color: aquamarine;
+
+}
+
+.container-tiga {
+    max-width: 80vw;
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.thumbnail {
+    width: 40%;
+
+
+
+}
+
+.thumbnail img {
+    width: 100%;
+
+
+}
+
+@media (min-width: 600px) {
+    .container-satu {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container-dua {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .container-tiga {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .thumbnail {
+        margin: 1%;
+        width: 25%;
+    }
+}
+
+/* latihan flexbox2 */
+.container1 {
+    border: 3px solid black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    background-color: blueviolet;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content1 {
+    border: 5px solid white;
+    display: flex;
+}
+
+.sidebar1 {
+    border: 5px solid black;
+    flex: 1;
+}
+
+aside {
+    background-color: rgb(0, 195, 255);
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: rgb(89, 0, 255);
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    align-self: stretch;
+}
+
+footer {
+    background-color: rgb(88, 88, 88);
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* latihan grid */
+
+.container2 {
+    border: 3px solid black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "header header header"
+        "aside paragraph main"
+        "nav paragraph main "
+        "footer footer footer";
+    /* memberikan urutan areanya 2 kolom 2 grid*/
+    grid-template-columns: 1fr 0.1fr 2fr;
+    /* mengatur ukuran kolom 1,2 dan 3kiri dan kanan */
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: blueviolet;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+aside {
+    grid-area: aside;
+    background-color: rgb(0, 195, 255);
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(89, 0, 255);
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 p {
+    grid-area: paragraph;
+    background-color: rgb(0, 255, 64);
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    margin: 0;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    align-self: stretch;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(88, 88, 88);
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
