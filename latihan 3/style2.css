@@ -1,0 +1,108 @@
+/* Selector Css */
+
+/* anatomi css */
+/* Selector { property: vale;} */
+/* selector dibagi menjadi 3 yaitu tag HTML, class, dan id */
+
+body {
+    font-family: arial, verdana, sans-serif;
+}
+
+h1,
+h2 {
+    color: black;
+}
+
+h2 {
+    font-style: italic;
+}
+
+/* Perinthnya css tolong lakukan perubahan pada tag a
+yang berada di dalam tag li dan dialam tag ul */
+ul li a {
+    color: aqua;
+}
+
+/* Perintahnya css tolong carikan saya yang idnya p1 untuk dirubah */
+#p1 {
+    color: blue;
+}
+
+/* Perintahnya css tolong carikan saya yang classnya p2 untuk dirubah */
+.p2 {
+    color: brown;
+}
+
+.cetak-tebal {
+    font-weight: bold;
+}
+
+p.cetak-tebal {
+    font-size: 30px;
+}
+
+/* PSEUDO */
+
+/* Perintahnya Css tolong berikan perubahan hover pada class hover */
+.hover:hover {
+    font-size: 50px;
+}
+
+/* css tolong ubah elemen link pada ul */
+ul:link {
+    color: orange;
+}
+
+/* css tolong carikan elemen a anak pertama dari elemen li dan elemen ul */
+ul li:first-child a {
+    color: red;
+}
+
+/* css tolong carikan elemen a anak terakhir dari elemen li dan elemen ul*/
+ul li:last-child a {
+    color: green;
+}
+
+/* specifity 113 */
+ul#b li.b a {
+    color: red;
+}
+
+/* css tolong carikan elemen a anak KELIPATAN 2 NAMUN DIMULAI DARI DEFAULT YANG DIKURANGI 1 ANGKA
+ dari elemen li dan elemen ul, untuk bilangan genap cukup kasih value even*/
+ol li:nth-child(2n-1) a {
+    color: red;
+}
+
+/* css Untuk Latihan Layour.html bagian margin */
+.margin {
+    background-color: white;
+    font-size: 12px;
+
+}
+
+.margin div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+/* css tolong ubah margin kiri dan kanan pada elemen yang menggunakan class margin dan satu  */
+.margin .satu {
+    background-color: blue;
+    border: 30px solid red;
+
+}
+
+/* css tolong ubah margin atas bawah dan kiri kanan pada elemen yang menggunakan class margin dan dua */
+.margin .dua {
+    background-color: blueviolet;
+    border: 10px dashed blue;
+
+}
+
+/* css tolong ubah margin atas kiri kanan dan bawah pada elemen yang menggunakan class margin dan tiga */
+.margin .tiga {
+    background-color: brown;
+    border: 5px double yellow;
+}
