@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="johar" content="belajar">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Latihan Materi HTML</title>
+
+    <!-- CSS -->
+    <!-- <style>
+        body{
+            font-family: cursive;
+        }
+        h1{
+            color: aqua;
+        }
+    </style> -->
+    <!-- /CSS -->
+</head>
+<body>
+    <!-- judul Materi -->
+    <h1 id="judul">Latihan HTML Johar</h1>
+    <hr>
+
+    <!-- List link materi HTML -->
+    <h2>List Materi</h2>
+    <ul>
+        <li><a href="#materi1">Materi Form</a></li>
+        <li><a href="#materi2">Materi Table</a></li>
+        <li><a href="#materi3">Materi CSS</a></li>
+    </ul>
+
+    <!-- Materi 1 (Form) -->
+    <h3 id="materi1">Membuat Form</h3>
+    <form action="">
+<table border="1" cellpadding="3">
+    <thead>
+        <tr align="center">
+            <th colspan="2">Form Registrasi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="right">
+                <label for="username">User Name :</label>
+            </td>
+            <td>
+                 <input type="text" id="username">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="password">Password :</label>
+            </td>
+            <td>
+                 <input type="password" id="pasword">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="gender">Jenis Kelamin :</label>
+            </td>
+            <td>
+                 <input type="radio"  name="gender" id="pria"><label for="pria">Pria</label>
+                 <input type="radio"  name="gender" id="wanita"><label for="wanita">Wanita</label>
+            </td>
+        </tr>
+          <tr>
+            <td align="right">
+                <label for="hobi">Hobi :</label>
+            </td>
+            <td>
+                 <input type="checkbox" name="hobi" id="coding"><label for="coding">Coding</label>
+                 <input type="checkbox" name="hobi" id="sepeda"><label for="sepeda">Speda</label>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="kota" >Kota Tinggal :</label>
+            </td>
+            <td>
+                 <select name="kota" id="kota">
+                     <option value="Bekasi">Bekasi</option>
+                     <option value="Bandung">Bandung</option>
+                 </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="alamat">Alamat :</label>
+            </td>
+            <td>
+                <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <button type="submit">Kirim</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</form>
+<hr>
+
+<br><br><br><br><br>
+<h3 id="materi2">Materi Table</h3>
+    <table border="1" cellpadding="3">
+        <thead>
+            <tr>
+                <th colspan="5">
+                    Kotak kosong di tengah  baris dan kolom pada Table 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1.1</td>
+                <td>1.2</td>
+                <td>1.3</td>
+                <td>1.4</td>
+                <td>1.5</td>
+            </tr>
+            <tr align="center">
+                <td>2.1</td>
+                <td colspan="3" rowspan="3">?</td>
+                <td>2.5</td>
+            </tr>
+            <tr align="center">
+                <td>3.1</td>
+                <td>3.5</td>
+            </tr>
+            <tr align="center">
+                <td>4.1</td>
+               
+                <td>4.5</td>
+            </tr>
+            <tr align="center">
+                <td>5.1</td>
+                <td>5.2</td>
+                <td>5.3</td>
+                <td>5.4</td>
+                <td>5.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1 id="materi3">Materi CSS</h1>
+<h3> Hello World </h3>
+<p>Ini adalah jenis jenis atribut Css</p>
+<a href="/latihan 2/latihan materi Css.html">Materi selanjutnya latihan selector Css</a>
+
+    <br><br><br><br><br>
+    <button type="submit"><a href="#judul">Keatas</a> </button>
+    
+</body>
+</html>
