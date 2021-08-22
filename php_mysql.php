@@ -8,7 +8,11 @@ require "functions.php";
 // buat variable untuk menampung data function dengan perintah "SELECT * FROM nama_table"
 $total_brg = query("SELECT * FROM tb_barang");//PARAMETER UNTUK USER MELAKUKAN PENGAMBILAN BAJU DI LEMARI
 
-
+// KALAU TOMBOL CARI DITEKAN
+if (isset($_POST['cari'])) {
+    // AMBIL SEMUA DATA POST CARI DAN KIRIM KE FUNCTION CARI DAN TIMPA NILAIVARIABLE TOTAL BRG
+   $total_brg = cari($_POST['cari']);
+}
 //UNTUK CEK APAKAH ERROR ATAU TIDAK
 /* if (!$result) {
     echo mysqli_error($db);
@@ -25,6 +29,11 @@ $total_brg = query("SELECT * FROM tb_barang");//PARAMETER UNTUK USER MELAKUKAN P
 </head>
 <body>
     <a href="CREAT.php"><button>Tambah Data !</button></a>
+    <br>
+    <form action="" method="POST">
+        <input type="text" name="cari" autofocus placeholder="Cari Data.." autocomplete="off">
+        <button type="submit" name="submit">Cari</button>
+    </form>
     
     <table border="1" cellpadding="5" >
         <thead>
@@ -44,7 +53,8 @@ $total_brg = query("SELECT * FROM tb_barang");//PARAMETER UNTUK USER MELAKUKAN P
             <tr>
                 <td><?= $no;?></td>
                 <td><?= $brg["id"];?></td>
-                <td><a href="">Ubah</a>|<a href="DELETE.php?id=<?= $brg["id"];?>" onclick="return confirm('Anda Yakin Data dengan Id = <?= $brg['id']?> ingin dihapus ?');">Hapus</a></td>
+                <td><a href="UPDATE.php?id=<?= $brg['id'];?>">Ubah</a>|
+                <a href="DELETE.php?id=<?= $brg["id"];?>" onclick="return confirm('Anda Yakin Data dengan Id = <?= $brg['id']?> ingin dihapus ?');">Hapus</a></td>
                 <td><img src="<?= $brg["gambar"];?>" alt="" width=100></td>
                 <td><?= $brg["nama"];?></td>
                 <td><?= $brg["brand"];?></td>
