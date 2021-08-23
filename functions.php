@@ -84,7 +84,7 @@ function query($query) {
     
 */
 
-
+// TAMBAH
 function create($data){
     global $db;
     // SEMUA DATA POST MASUK KE VARIABLE
@@ -102,6 +102,32 @@ function create($data){
     return mysqli_affected_rows($db);
 }
 
+// 5
+// EDIT
+function update($data){
+    global $db;
+    // SEMUA DATA POST MASUK KE VARIABLE
+    $id = $data["id"];
+    $nama = htmlspecialchars($data["nama"]);//kasih function htmlspecialchars agar data berupa syntax program yang dimasukkan tidak menjadi program tapi jadi string
+    $brand = htmlspecialchars($data["brand"]);
+    $harga = htmlspecialchars($data["harga"]);
+    $gambar = htmlspecialchars($data["gambar"]);
+    //KIRIM PESAN KEVARIABLE BAHWA SEMUA DATA VARIABLE MASUK KE TABLE tb_barang
+    $update ="UPDATE tb_barang SET
+              nama ='$nama',
+              brand ='$brand',
+              harga =$harga,
+              gambar ='$gambar'
+              WHERE id=$id
+              ";
+    //KIRIM VARIABLE PESAN KE DATABASE
+    mysqli_query($db, $update);
+
+    // BERITAHU USER TENTANG BERHASIL ATAU TIDAK DATA DITAMBAH KE DATABASE
+    return mysqli_affected_rows($db);
+}
+
+// DELETE
 function delete($id){
     // KONEKSI KE DATABASE
     global $db;
@@ -112,5 +138,17 @@ function delete($id){
     // KIRIM LAPORAN KE USER APAKAH BERHASIL ATAU TIDAK
     return mysqli_affected_rows($db);
 
+}
+
+// CARI
+function cari($cari){
+    // PERINTAH CARI BERDASARKAN FIELD nama atau brand YANG MIRIP CHARNYA DENGAN YANG DIKIRIM
+    $query = "SELECT * FROM tb_barang 
+            WHERE nama LIKE '%$cari%'
+            OR
+            brand LIKE '%$cari%'
+    ";
+    //JALANKAN FUNCTION QUERY/PENGAMBILAN DATA TABLE
+    return query($query);
 }
 ?>
