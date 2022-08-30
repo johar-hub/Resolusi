@@ -1,13 +1,25 @@
 Resolusi
-- Mengerti materi GIThub & GitLab
-- Mengerti materi PHP
-- Framework PHP
-  ^ codeignater
-  ^ Laravel
-- Javascript DOM
-- Bootstrap
-- CSS (SASS)
-- Modern Javascript
-- API
-- Reacst.Js
-- Database Postgreesql, MariaDB
+
+Fullstack Web Developer
+- Dapat implementasi  HTML5 (target 05/09/2022) "DONE"
+- Dapat implementasi CSS3 sampai Animastion (Target menyelesaikan tutorial di youtube UNPAS 30/09/2022) "ON PROGRESS"
+- Dapat implementasi Javascript (Target menyelesaikan tutorial di youtube UNPAS 30/10/2022)
+- Dapat implementasi Bootstrap (Target menyelesaikan tutorial di youtube UNPAS 30/11/2022)
+- Dapat implementasi materi PHP (Target menyelesaikan tutorial di youtube UNPAS 30/12/2022)
+- Dapat implementasi Framework PHP
+  ^ Laravel (Target menyelesaikan tutorial di youtube UNPAS 30/01/2023)
+- Dapat implementasi Database MySQL (Target menyelesaikan tutorial di youtube UNPAS 30/02/2023)
+- Dapat implementasi materi GIThub & GitLab (Target menyelesaikan tutorial di youtube UNPAS 30/02/2023)
+- Dapat implementasi Javascript DOM (Target menyelesaikan tutorial di youtube UNPAS 30/03/2023)
+- Dapat implementasi Modern Javascript (Target menyelesaikan tutorial di youtube UNPAS 30/04/2023)
+- Dapat implementasi API (Target menyelesaikan tutorial di youtube UNPAS 30/05/2023)
+- Dapat implementasi CSS (SASS) (Target menyelesaikan tutorial di youtube UNPAS 30/07/2023)
+- Dapat implementasi NPM (Target menyelesaikan tutorial di youtube UNPAS 30/09/2023)
+- Dapat implementasi Reacst.Js (Target menyelesaikan tutorial di youtube UNPAS 30/11/2023)
+- Dapat implementasi Vue.Js (Target menyelesaikan tutorial di youtube UNPAS 30/01/2024)
+- Dapat implementasi Node.JS (Target menyelesaikan tutorial di youtube UNPAS 30/04/2024)
+- Dapat implementasi React Native (Target menyelesaikan tutorial di youtube UNPAS 30/08/2024)
+
+Note : Resolusi dapat berubah setiap saat sesuai dengan kemajua teknologi dan kebutuhan.
+
+Bismillah semoga tercapai.
