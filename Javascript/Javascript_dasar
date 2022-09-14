@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // cetak ke html
+      document.write("write");
+      document.writeln("writeln");
+      document.writeln("writeln");
+
+      //variabel
+      let hello = "Hello";
+      console.info(hello);
+      hello = "Hello 2";
+      console.info(hello);
+
+      const World = "world";
+      console.info(World);
+      // World = "world2";
+      // console.info(World);
+
+      // aritmatika
+
+      let a = 1;
+      let b = 2;
+      let c = 3;
+
+      let tambah = a + b + c;
+      let kali = a * b * c;
+      let pembagian = a / b / c;
+      console.info(tambah);
+      console.info(`Hasil Perkalian ${a}*${b}*${c}= ${kali}`);
+      console.info(`Hasil Pembagian ${a}:${b}:${c}= ${pembagian}`);
+
+      // augmentend assigment
+
+      let aa = 2;
+      aa += 3;
+      // aa -= 3;
+      // aa /= 2;
+      // aa *= 10;
+      console.info(
+        `Augmented assigment dari aa=2 menjadi aa += 3 adalah ${aa}`
+      );
+
+      // operator perbandingan
+      let olA = 5;
+      samaDengan = olA == "5";
+      tidakSamaDengan = olA !== "5";
+      persisSamaDengan = olA === "5";
+      kurangDari = olA < 5;
+      lebihDari = olA > 5;
+      console.info(`apakah angka 5 == 5 jawabannya ${tidakSamaDengan}`);
+
+      // Operator Perbandingan
+
+      let namaSiswa = "Udin";
+      const nilaiUjian = 75;
+      const nilaiAbsensi = 75;
+
+      let lulusUjian = nilaiUjian >= 80;
+      let lulusAbsensi = nilaiAbsensi >= 80;
+      let lulus = lulusUjian && lulusAbsensi;
+
+      console.info(`Apakah ${namaSiswa} lulus ? ${lulus}`);
+
+      // Macam macam console
+      /*  console.debug();
+      console.info();
+      console.warn();
+      console.error(); */
+
+      // Konversi number ke sring atau sebaliknya
+      /* parseInt = String;
+      parseFloat = String;
+      Number = bebas;
+      number.tostring = bebas; */
+      let KonversiNumbera = 5;
+      let KonversiNumberb = "5";
+
+      console.info(
+        `Tambah number dan string 5 + "5" = ${
+          KonversiNumbera + KonversiNumberb
+        }`
+      );
+
+      console.info(
+        `Tambah number dan string 5 + "5" setelah string diubah jadi number = ${
+          KonversiNumbera + Number(KonversiNumberb)
+        }`
+      );
+    </script>
+  </body>
+</html>
