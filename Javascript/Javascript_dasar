@@ -94,6 +94,53 @@
           KonversiNumbera + Number(KonversiNumberb)
         }`
       );
+
+      // Array
+
+      const arrays = [];
+      arrays.push("Johar");
+      arrays.push("Saputra", "Irsandi");
+
+      console.table(arrays);
+
+      arrays[0] = "Jojo";
+      console.table(arrays);
+
+      delete arrays[0];
+      console.table(arrays);
+
+      arrays.push("Josandi");
+      console.table(arrays);
+
+      arrays[0] = "kembali";
+      console.table(arrays);
+
+      arrays.push(["fitnes", "ngoding", "baca buku"]);
+
+      console.table[arrays];
+
+      //Object
+      const orang = {
+        nama: "Johar Saputra Irsandi",
+        alamat: "Bekasi, pondok ungu",
+        umur: 22,
+        hobi: ["Ngoding", "Baca buku", "Fitness"],
+        status: "Lajang",
+      };
+
+      delete orang["status"];
+      console.log(`Nama : ${orang.nama}`);
+      console.log(`Alamat : ${orang.alamat}`);
+      console.log(`Umur : ${orang.umur}`);
+      console.log(`Hobi : ${orang.hobi}`);
+      console.log(`Status : ${orang.status}`);
+
+      console.table(orang);
+      // Function
+      function name() {
+        window.alert("Hallo");
+      }
+      name();
     </script>
   </body>
 </html>
