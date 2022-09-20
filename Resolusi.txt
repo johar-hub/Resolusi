@@ -2,8 +2,8 @@ Resolusi
 
 Fullstack Web Developer
 - Dapat implementasi  HTML5 (target 05/09/2022) "DONE"
-- Dapat implementasi CSS3 sampai Animastion (Target menyelesaikan tutorial di youtube UNPAS 30/09/2022) "ON PROGRESS"
-- Dapat implementasi Javascript (Target menyelesaikan tutorial di youtube UNPAS 30/10/2022)
+- Dapat implementasi CSS3 sampai Animastion (Target menyelesaikan tutorial di youtube UNPAS 30/09/2022) "DONE"
+- Dapat implementasi Javascript Dasar (Target menyelesaikan tutorial di youtube Programming Zaman Now 30/10/2022)"ON PROGRESS"
 - Dapat implementasi Bootstrap (Target menyelesaikan tutorial di youtube UNPAS 30/11/2022)
 - Dapat implementasi materi PHP (Target menyelesaikan tutorial di youtube UNPAS 30/12/2022)
 - Dapat implementasi Framework PHP
