@@ -1,0 +1,187 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navigasi */
+nav {
+  color: white;
+  background-color: black;
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.garis {
+  height: 1px;
+  background-color: white;
+  transform: scale(0, 1);
+  width: 100%;
+  position: absolute;
+}
+ul li:hover .garis {
+  animation: garis 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes garis {
+  0% {
+    transform: scale(0.5, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* End Navigasi */
+
+/* Hero */
+section.hero {
+  background-color: rgba(255, 0, 0, 0.507);
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
+}
+.containerhero {
+  /* background-color: chartreuse; */
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.judulhero {
+  position: relative;
+  width: 100%;
+}
+.h1judul {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 4px 3px 10px black;
+}
+.garis-judul-hero {
+  height: 3px;
+  background-color: white;
+  width: 70%;
+  position: absolute;
+  bottom: -10px;
+  box-shadow: 4px 3px 6px black;
+}
+
+/* Animasi Titik */
+.titik1 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50px;
+  border-radius: 100%;
+  left: 10px;
+  animation-name: animasiTitik;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.titik2 {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60px;
+  border-radius: 100%;
+  left: 40px;
+  animation-name: animasiTitik;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.2s;
+}
+.titik3 {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 80px;
+  border-radius: 100%;
+  left: 20px;
+  animation-name: animasiTitik;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.3s;
+}
+.titik4 {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 50px;
+  border-radius: 100%;
+  right: 10px;
+  animation-name: animasiTitik;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.titik5 {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 50px;
+  border-radius: 100%;
+  right: 40px;
+  animation-name: animasiTitik;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.2s;
+}
+.titik6 {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 77px;
+  border-radius: 100%;
+  right: 32px;
+  animation-name: animasiTitik;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.3s;
+}
+
+@keyframes animasiTitik {
+  0% {
+    transform: scale(0, 0);
+  }
+  70% {
+    transform: scale(1, 1);
+  }
+  85% {
+    transform: scale(0.7, 0.7);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
